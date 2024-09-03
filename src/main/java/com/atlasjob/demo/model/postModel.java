@@ -10,16 +10,37 @@ public class postModel {
     private String desc;
     private int exp;
     private String[] techs;
+    private String title;
+    private String rank;
+
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
 
     // Varsayılan kurucu
     public postModel() {}
 
     // Parametreli kurucu
-    public postModel(String profile, String desc, int exp, String[] techs) {
+    public postModel(String profile, String desc, int exp,String title,String rank, String[] techs) {
         this.profile = profile;
         this.desc = desc;
         this.exp = exp;
         this.techs = techs;
+        this.title = title;
+        this.rank = rank;
     }
 
     // Getters ve Setters
